@@ -1,5 +1,5 @@
 # Lane_Detection
-The project is based on deep learning which detects the lane in road and suggest the user/EMI of car to drive  as per the lane presence.
+The project is based on deep learning which detects the lane in road and suggest the user/ADAS of car to drive  as per the lane presence.
 
 <ul>Automobiles are indispensible as per our day to day lives.We have to travel everyday  as per our daily routine or needs.Its been estimated that the number of automobiles is much more than the human population and the demand for it increases each year.</ul>
 
