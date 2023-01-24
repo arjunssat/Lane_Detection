@@ -7,4 +7,9 @@ The project is based on deep learning which detects the lane in road and suggest
 
 <ul>
 <img src="https://github.com/arjunssat/Lane_Detection/blob/main/test_image.jpg" alt="Image Hough" width="900" height="450">
+
+The image is converted to Gray scale for better gradient results and masking the other area and for deting the Are of interest.
+
+<img src="https://github.com/arjunssat/Lane_Detection/blob/main/Mask.jpeg" alt="Image Hough" width="900" height="450">
+
 </ul>
