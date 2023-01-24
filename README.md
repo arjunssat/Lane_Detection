@@ -6,5 +6,5 @@ The project is based on deep learning which detects the lane in road and suggest
 <ul>The code here is created based on the motive of autmoation of four vehicles at a faster and affordable pace.Automation could reduce the accidents caused by human errors/negilence.As a matter of fact the code been created to detect the lanes in roads and hepls the driver and car EMP to track those lanes and be in designated course.This is the intial phase of the lane detection_automation which keep a  record track of the car. </ul>
 
 <ul>
-<img src="" alt="Girl in a jacket" width="500" height="600">
+<img src="https://github.com/arjunssat/Lane_Detection/blob/main/test_image.jpg" alt="Image Hough" width="500" height="600">
 </ul>
