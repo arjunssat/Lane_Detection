@@ -15,7 +15,7 @@ The image is converted to Gray scale for better gradient results and masking the
 <img src="https://github.com/arjunssat/Lane_Detection/blob/main/Mask.jpeg" alt="Iamge Hough lines" width="900" height="450">
   <br>
   <br>
-  <img src="" alt="Image detected" width="900" height="450">
+  <img src="https://github.com/arjunssat/Lane_Detection/blob/main/Lane%20Detected.jpeg" alt="Image detected" width="900" height="450">
   
 
 </ul>
