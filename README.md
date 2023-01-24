@@ -16,7 +16,7 @@ The image is converted to Gray scale for better gradient results and masking the
   <br>
   <br>
   
-  The image here presents the line detedcted though Hough function for lande detection.
+  The image here presents the line detected though Hough function for lande detection.
   <img src="https://github.com/arjunssat/Lane_Detection/blob/main/Lane%20Detected.jpeg" alt="Image detected" width="900" height="450">
   
 
