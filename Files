@@ -15,3 +15,36 @@ The third tuple (width-300, height) represents the x and y coordinates of the bo
 of the frame and the y-coordinate is set to the height of the frame, so that the ROI covers the entire height of the frame.Finally, the np.int32 dtype is added to 
 make sure that the vertex coordinates are integers and fillPoly can accept it.
 It is used to apply a mask on the image to keep only the region of interest and discard the rest of the image.
+
+
+cv2.fillPoly(mask, roi_vertices, 255)
+        masked_image = cv2.bitwise_and(edges, mask)
+
+The fillPoly function from OpenCV is used to fill a polygon defined by a set of vertices with a specified color. The first argument to the function is the image to be filled, which in this case
+ is the mask image. The second argument is an array of vertices, which in this case is the roi_vertices variable defined earlier. The third argument is the color of the fill, which in this
+ case is 255 (white).
+
+The function fills the mask image with white pixels at the coordinates of the region of interest defined by the roi_vertices variable.
+The line masked_image = cv2.bitwise_and(edges, mask) applies the mask on the edges image using the bitwise_and function and keep only the white pixels from the mask image and the rest of the
+ pixels are set to black.
+
+The bitwise_and function from OpenCV is used to perform a bitwise and operation between two images. The first argument to the function is the first image, which in this case is the edges image.
+ The second argument is the second image, which in this case is the mask image. The function compares each pixel of the two images and keeps only the pixels that are white (255) in both images 
+and sets the rest of the pixels to black (0).
+The resulting image is stored in the variable masked_image and it contains only the edges that are present in the region of interest.
+
+lines = cv2.HoughLinesP(masked_image, rho=2, theta=np.pi/180, threshold=50, minLineLength=10, maxLineGap=30)
+
+The Hough Line Transform is a popular algorithm used to detect lines in images. It is based on the idea of representing lines in the image in a parameter space, where each point in the parameter
+space corresponds to a line in the image. The algorithm looks for clusters of points in the parameter space that correspond to lines in the image.
+The HoughLinesP function from OpenCV is used to perform the Hough Line Transform. It takes several arguments:
+
+The first argument is the input image, which in this case is the masked edges image.
+The second argument is the distance resolution of the accumulator in pixels. It is set to 2 pixels.
+The third argument is the angle resolution of the accumulator in radians. It is set to pi/180 radians.
+The fourth argument is the threshold for the minimum number of intersections in the accumulator to consider a line. It is set to 50.
+The fifth argument is the minimum line length. It is set to 10 pixels.
+The sixth argument is the maximum gap between two points on the same line to be considered the same line. It is set to 30 pixels.
+The function returns an array of lines, where each line is represented by a tuple of four values: (x1, y1, x2, y2) representing the start and end points of the line. 
+The resulting lines are stored in the variable lines.
+These lines are then used to draw lines on a blank image and overlay it on the original image to highlight the detected lanes.
