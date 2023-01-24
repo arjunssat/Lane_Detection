@@ -1,1 +1,17 @@
 
+roi_vertices = np.array([[(200, height), (width/2, height/1.37), (width-300, height)]], np.int32)
+
+
+A ROI is a specific area within an image or video that is of interest and should be analyzed, while the rest of the image is ignored. 
+In this case, the ROI is defined by a set of (x,y) coordinates that form a polygon. These coordinates are provided as a list of tuples inside a nested list.
+
+The first tuple (200, height) represents the x and y coordinates of the top-left vertex of the ROI. The x-coordinate is set to 200 pixels from the left of the 
+frame and the y-coordinate is set to the height of the frame, so that the ROI covers the entire height of the frame.
+
+The second tuple (width/2, height/1.37) represents the x and y coordinates of the top-right vertex of the ROI. The x-coordinate is set to half of the width of the 
+frame and the y-coordinate is set to the height of the frame divided by 1.37. This is used to define the angle of the ROI with respect to the road.
+
+The third tuple (width-300, height) represents the x and y coordinates of the bottom-right vertex of the ROI. The x-coordinate is set to 300 pixels from the right 
+of the frame and the y-coordinate is set to the height of the frame, so that the ROI covers the entire height of the frame.Finally, the np.int32 dtype is added to 
+make sure that the vertex coordinates are integers and fillPoly can accept it.
+It is used to apply a mask on the image to keep only the region of interest and discard the rest of the image.
