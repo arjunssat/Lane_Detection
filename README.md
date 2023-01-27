@@ -18,6 +18,9 @@ The image is converted to Gray scale for better gradient results and masking the
   
   The image here presents the line detected though Hough function for road lane detection.
   <img src="https://github.com/arjunssat/Lane_Detection/blob/main/Lane%20Detected.jpeg" alt="Image detected" width="900" height="450">
+  <br><br><br>
+  The Final Output is obtained and the Lanes have been detected.
   
+  <img src="https://github.com/arjunssat/Lane_Detection/blob/main/final_lane_detected.jpg" alt="Image detected" width="900" height="450">
 
 </ul>
