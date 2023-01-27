@@ -11,15 +11,18 @@ The project is based on deep learning which detects the lane in road and suggest
   <br>
 
 The image is converted to Gray scale for better gradient results and masking the other area and for detecting the Area of interest(Lanes).
+  <br>
 
 <img src="https://github.com/arjunssat/Lane_Detection/blob/main/Mask.jpeg" alt="Iamge Hough lines" width="900" height="450">
   <br>
   <br>
     The image here presents the line detected though Hough function for road lane detection.
+  <br>
   
   <img src="https://github.com/arjunssat/Lane_Detection/blob/main/Lane%20Detected.jpeg" alt="Image detected" width="900" height="450">
   <br><br><br>
   The Final output is obtained and the corresponding Lanes have been detected.
+  <br>
   
   <img src="https://github.com/arjunssat/Lane_Detection/blob/main/final_lane_detected.jpg" alt="Image detected" width="900" height="450">
 
